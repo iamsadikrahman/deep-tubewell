@@ -64,7 +64,7 @@
           <span class="block text-sm font-medium text-black">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-300 px-2 py-2">{{totalCost}} ৳</span></span>
 
           <label class="block">
-            <span class="block text-sm font-medium text-slate-700">অগ্রীম জমার পরিমাণঃ (টাকা)</span>
+            <span class="block text-sm font-medium text-slate-700">অগ্রীম জমাঃ (টাকা)</span>
             <input type="text" name="advance-paid" v-model="advancePaid" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
           </label>
         </div>
@@ -73,7 +73,7 @@
           <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-red-200 px-2 py-2 text-black">{{totalCurrentDue}} ৳</span></span>
 
           <label class="block">
-            <span class="block text-sm font-medium text-slate-700">হালখাতায় জমার পরিমাণঃ (টাকা)</span>
+            <span class="block text-sm font-medium text-slate-700">হালখাতায় জমাঃ (টাকা)</span>
             <input type="text" name="halkhata-paid" v-model="halkhataPaid" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
           </label>
         </div>
