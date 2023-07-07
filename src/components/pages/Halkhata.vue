@@ -61,7 +61,7 @@
 
       <div class="final-calculation-area flex gap-5">
         <div class="flex flex-col gap-6">
-          <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{totalCost}} টাকা</span></span>
+          <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-400 px-2 py-2">{{totalCost}} টাকা</span></span>
 
           <label class="block">
             <span class="block text-sm font-medium text-slate-700">অগ্রীম জমার পরিমাণঃ</span>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="flex flex-col  gap-6">
-          <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{totalCurrentDue}} টাকা</span></span>
+          <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-emerald-400 px-2 py-2">{{totalCurrentDue}} টাকা</span></span>
 
           <label class="block">
             <span class="block text-sm font-medium text-slate-700">হালখাতায় জমার পরিমাণঃ</span>
