@@ -1,7 +1,7 @@
 
 
 <template>
-<h2 class="text-center text-2xl	">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
+<p class="text-center text-2xl text-red-600	">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</p>
   <button @click="goToHalkhata">হালখাতার হিসাব করতে এখানে ক্লিক করুন</button>
   <br>
   <button @click="goToContact">Contact Us</button>

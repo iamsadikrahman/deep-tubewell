@@ -1,42 +1,61 @@
 <template>
   <main class="flex flex-col container mx-auto w-10/12 gap-5">
    <header>
-    <h2 class="mt-5">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
-    
+    <h2 class="mt-5 text-center">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
+
   </header>
 
-    <section id="potato">
-        <h3 class="title">আলুর সেচ হিসাব</h3>
-        <div class="season-calculation">
+<!--    Potato Start-->
+    <section id="potato" class="border-2 rounded-2xl pt-5 pb-5">
+        <h3 class="text-center pb-5">আলু মৌসুমের হিসাব</h3>
+        <div class="season-calculation flex justify-center gap-5 ">
 
-          <label for="potato-field">আলুর মোট জমির পরিমাণঃ</label>
-          <input type="text" name="potato-field" v-model="potatoField">
-          <br>
-          <label for="potato-per-unit-cost">আলু প্রতি শতকঃ</label>
-          <input type="text" name="potato-per-unit-cost" v-model="potatoPerUnitCost">
+          <div>
+            <label class="block mb-3">
+              <span class="block text-sm font-medium text-slate-700">আলুর মোট জমির পরিমাণঃ</span>
+              <input type="text" name="potato-field" v-model="potatoField" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" >
+            </label>
 
-          <br>
-          <h4 class="potato-total-cost">আলুর মোট সেচ খরচঃ {{ potatoTotalCost }} টাকা</h4>
+            <label class="block">
+              <span class="block text-sm font-medium text-slate-700">আলু প্রতি শতক সেচ খরচঃ</span>
+              <input type="text" name="potato-per-unit-cost" v-model="potatoPerUnitCost" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
+            </label>
+          </div>
+
+          <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
+            <h4 class="potato-total-cost">মোট সেচ খরচঃ</h4>
+            <h4> {{ potatoTotalCost }} টাকা</h4>
+          </div>
 
         </div>
     </section>
-    <section id="paddy">
-      <h3 class="title">ইরির সেচ হিসাব</h3>
-      <div class="season-calculation">
+<!--Potato End-->
 
+<!--    Paddy Start-->
+    <section id="potato" class="border-2 rounded-2xl pt-5 pb-5">
+      <h3 class="text-center pb-5">ইরি মৌসুমের হিসাব</h3>
+      <div class="season-calculation flex justify-center gap-5 ">
 
-          <label for="paddy-field">ইরির মোট জমির পরিমাণঃ</label>
-          <input type="text" name="paddy-field" v-model="paddyField">
+        <div>
+          <label class="block mb-3">
+            <span class="block text-sm font-medium text-slate-700">ইরির মোট জমির পরিমাণঃ</span>
+            <input type="text" name="potato-field" v-model="paddyField" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1" >
+          </label>
 
-        <br>
-        <label for="paddy-per-unit-cost">ইরির প্রতি শতকঃ</label>
-        <input type="text" name="paddy-per-unit-cost" v-model="paddyPerUnitCost">
+          <label class="block">
+            <span class="block text-sm font-medium text-slate-700">ইরি প্রতি শতক সেচ খরচঃ</span>
+            <input type="text" name="potato-per-unit-cost" v-model="paddyPerUnitCost" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
+          </label>
+        </div>
 
-        <br>
-        <h4 class="paddy-total-cost">ইরির মোট সেচ খরচঃ {{ paddyTotalCost }} টাকা</h4>
+        <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
+          <h4 class="potato-total-cost">মোট সেচ খরচঃ</h4>
+          <h4> {{ paddyTotalCost }} টাকা</h4>
+        </div>
 
       </div>
     </section>
+<!--    Paddy End-->
     <section class="final-calculation">
         <h3 class="title">সর্বশেষ হিসাব</h3>
 
@@ -150,47 +169,6 @@ const allReset = ()=> {
 </script>
 
 <style scoped>
-
-.title{
-  text-align: center;
-  padding: 8px 2px;
-  border-radius: 5px;
-  background-color: lightgray;
-  font-size: 18px;
-}
-
-input {
-  border: 1px solid lightgray;
-  padding: 8px 5px;
-  margin: 10px 5px;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 25%;
-
-}
-
-h4 {
-  text-align: center;
-}
-
-
-header {
-  text-align: center;
-}
-.reset-btn {
-  border: none;
-  padding: 10px 8px;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  background-color: seagreen;
-  cursor: pointer;
-  color: white;
-}
-
-#final-due {
-  color: red;
-}
 
 
 
