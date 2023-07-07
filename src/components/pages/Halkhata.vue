@@ -1,10 +1,9 @@
 <template>
-  <main class="flex flex-col container mx-auto w-10/12 gap-10">
+  <main class="flex flex-col container mx-auto w-10/12 gap-5">
    <header>
-    <h2 class="title">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
-    <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button>
+    <h2 class="mt-5">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
+    
   </header>
-
 
     <section id="potato">
         <h3 class="title">আলুর সেচ হিসাব</h3>
@@ -51,6 +50,7 @@
         <h4 id="final-due">সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
       </div>
     </section>
+    <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button> 
 
   </main>
 </template>
