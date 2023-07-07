@@ -1,10 +1,11 @@
 <template>
   <header>
     <h2 class="title">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
-    <div class="halkhata">
-      <h3>শুভ হালখাতা! শুভ হালখাতা! শুভ হালখাতা!</h3>
-      <h4>সময়ঃ ১১ জুলাই ২০২৩ ইং । রোজঃ মঙ্গলবার</h4>
-    </div>
+<!--    <div class="halkhata">-->
+<!--      <h3>শুভ হালখাতা! শুভ হালখাতা! শুভ হালখাতা!</h3>-->
+<!--      <h4>সময়ঃ ১১ জুলাই ২০২৩ ইং । রোজঃ মঙ্গলবার</h4>-->
+<!--    </div>-->
+    <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button>
 
   </header>
 
@@ -70,7 +71,7 @@ let totalPotatoCost;
 let totalPaddyCost;
 let totalIrrigationCost;
 
-const advancePaid = ref()
+const advancePaid = ref('')
 let  currentDue;
 const halkhataPaid = ref('')
 let finalDue;
@@ -138,6 +139,18 @@ const finalTotalDue = computed(()=>{
 
 })
 
+// Reset Button
+
+const allReset = ()=> {
+  potatoField.value = ''
+  potatoPerUnitCost.value = 25
+  paddyField.value = ''
+  paddyPerUnitCost.value = 45
+  advancePaid.value = ''
+  halkhataPaid.value = ''
+}
+
+
 </script>
 
 <style scoped>
@@ -169,6 +182,22 @@ input {
 h4 {
   text-align: center;
 }
+
+
+header {
+  text-align: center;
+}
+.reset-btn {
+  border: none;
+  padding: 10px 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: seagreen;
+  cursor: pointer;
+  color: white;
+}
+
 
 
 
