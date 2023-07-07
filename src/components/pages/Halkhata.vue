@@ -22,8 +22,8 @@
             </label>
           </div>
 
-          <div class="bg-blue-400 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
-            <p class="potato-total-cost">মোট সেচ খরচঃ</p>
+          <div class="bg-orange-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
+            <p class="potato-total-cost text-center">আলু মৌসুমের <br> মোট সেচ খরচঃ</p>
             <h4> {{ potatoTotalCost }} টাকা</h4>
           </div>
 
@@ -48,16 +48,16 @@
           </label>
         </div>
 
-        <div class="bg-blue-400 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
-          <p class="potato-total-cost">মোট সেচ খরচঃ</p>
+        <div class="bg-sky-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
+          <p class="text-center">ইরি মৌসুমের <br> মোট সেচ খরচঃ</p>
           <h4> {{ paddyTotalCost }} টাকা</h4>
         </div>
 
       </div>
     </section>
 <!--    Paddy End-->
-    <section class="final-calculation">
-        <h3 class="title">সর্বশেষ হিসাব</h3>
+    <section class="final-calculation border-2 rounded-2xl p-3">
+        <h3 class="text-center pb-5">সর্বশেষ হিসাব</h3>
 
       <div class="final-calculation-area">
         <h4>মোট সেচ খরচঃ {{totalCost}} টাকা</h4>
