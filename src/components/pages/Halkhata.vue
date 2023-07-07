@@ -59,17 +59,31 @@
     <section class="final-calculation border-2 rounded-2xl p-3">
         <h3 class="text-center pb-5">সর্বশেষ হিসাব</h3>
 
-      <div class="final-calculation-area">
-        <h4>মোট সেচ খরচঃ {{totalCost}} টাকা</h4>
-        <label for="advance-paid">অগ্রীম জমার পরিমাণঃ</label>
-        <input type="text" name="advance-paid" v-model="advancePaid">
-        <h4>বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</h4>
-        <label for="halkhata-paid">হালখাতায় জমার পরিমাণঃ</label>
-        <input type="text" name="halkhata-paid" v-model="halkhataPaid">
-        <h4 id="final-due">সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
+      <div class="final-calculation-area flex gap-5">
+        <div class="flex flex-col gap-3">
+          <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ {{totalCost}} টাকা</span>
+
+          <label class="block">
+            <span class="block text-sm font-medium text-slate-700">অগ্রীম জমার পরিমাণঃ</span>
+            <input type="text" name="advance-paid" v-model="advancePaid" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
+          </label>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <span class="block text-sm font-medium text-slate-700">বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</span>
+
+          <label class="block">
+            <span class="block text-sm font-medium text-slate-700">হালখাতায় জমার পরিমাণঃ</span>
+            <input type="text" name="halkhata-paid" v-model="halkhataPaid" class="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300  focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1">
+          </label>
+        </div>
+
+
+
       </div>
+      <h4 class="text-center mt-3" >সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
     </section>
-    <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button> 
+    <button class="text-center bg-emerald-400 p-3 rounded-2xl" @click="allReset" type="reset">রিসেট করুন</button>
 
   </main>
 </template>
