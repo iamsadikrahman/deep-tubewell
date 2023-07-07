@@ -1,13 +1,13 @@
 <template>
-  <main class="flex flex-col container mx-auto w-11/12 gap-5">
+  <main class="flex flex-col container mx-auto w-11/12 gap-3">
    <header>
-    <h2 class="mt-5 text-center">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
+    <h2 class="mt-3 text-center">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
 
   </header>
 
 <!--    Potato Start-->
     <section id="potato" class="border-2 rounded-2xl p-3">
-        <h3 class="text-center pb-5">আলু মৌসুমের হিসাব</h3>
+        <h3 class="text-center pb-3">আলু মৌসুমের হিসাব</h3>
         <div class="season-calculation flex justify-center gap-3">
 
           <div>
@@ -33,7 +33,7 @@
 
 <!--    Paddy Start-->
     <section id="potato" class="border-2 rounded-2xl p-3">
-      <h3 class="text-center pb-5">ইরি মৌসুমের হিসাব</h3>
+      <h3 class="text-center pb-3">ইরি মৌসুমের হিসাব</h3>
       <div class="season-calculation flex justify-center gap-3 ">
 
         <div>
@@ -57,7 +57,7 @@
     </section>
 <!--    Paddy End-->
     <section class="final-calculation border-2 rounded-2xl p-3">
-        <h3 class="text-center pb-5">সর্বশেষ হিসাব</h3>
+        <h3 class="text-center pb-3">সর্বশেষ হিসাব</h3>
 
       <div class="final-calculation-area flex gap-5">
         <div class="flex flex-col gap-3">
