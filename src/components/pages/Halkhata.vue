@@ -59,7 +59,7 @@
     <section class="final-calculation border-2 rounded-2xl p-3">
         <h3 class="text-center pb-3">সর্বশেষ হিসাব</h3>
 
-      <div class="final-calculation-area flex gap-3">
+      <div class="final-calculation-area flex gap-3 justify-center">
         <div class="flex flex-col gap-6">
           <span class="block text-sm font-medium text-black">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-300 px-2 py-2">{{totalCost}} ৳</span></span>
 
