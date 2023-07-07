@@ -24,7 +24,7 @@
 
           <div class="bg-orange-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12 gap-3">
             <p class="text-center text-sm font-medium">আলু মৌসুমের <br> মোট সেচ খরচঃ</p>
-            <p class="text-center text-sm font-medium"> {{ potatoTotalCost }} টাকা</p>
+            <p class="text-center text-sm font-medium rounded-full bg-emerald-400 px-5 py-2"> {{ potatoTotalCost }} টাকা</p>
           </div>
 
         </div>
@@ -50,7 +50,7 @@
 
         <div class="bg-sky-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12 gap-3">
           <p class="text-center text-sm font-medium">ইরি মৌসুমের <br> মোট সেচ খরচঃ</p>
-          <p class="text-center text-sm font-medium"> {{ paddyTotalCost }} টাকা</p>
+          <p class="text-center text-sm font-medium rounded-full bg-emerald-400 px-5 py-2"> {{ paddyTotalCost }} টাকা</p>
         </div>
 
       </div>
@@ -60,8 +60,8 @@
         <h3 class="text-center pb-3">সর্বশেষ হিসাব</h3>
 
       <div class="final-calculation-area flex gap-5">
-        <div class="flex flex-col gap-3">
-          <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ {{totalCost}} টাকা</span>
+        <div class="flex flex-col gap-6">
+          <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{totalCost}} টাকা</span></span>
 
           <label class="block">
             <span class="block text-sm font-medium text-slate-700">অগ্রীম জমার পরিমাণঃ</span>
@@ -69,8 +69,8 @@
           </label>
         </div>
 
-        <div class="flex flex-col gap-3">
-          <span class="block text-sm font-medium text-slate-700">বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</span>
+        <div class="flex flex-col  gap-6">
+          <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{totalCurrentDue}} টাকা</span></span>
 
           <label class="block">
             <span class="block text-sm font-medium text-slate-700">হালখাতায় জমার পরিমাণঃ</span>
@@ -81,7 +81,7 @@
 
 
       </div>
-      <h4 class="text-center mt-3" >সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
+      <h4 class="text-center mt-6" >সর্বশেষ বকেয়াঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{finalTotalDue}} টাকা</span> </h4>
     </section>
     <button class="text-center bg-emerald-400 p-3 rounded-2xl" @click="allReset" type="reset">রিসেট করুন</button>
 
