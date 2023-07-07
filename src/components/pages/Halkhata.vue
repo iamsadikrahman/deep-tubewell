@@ -70,7 +70,7 @@
         </div>
 
         <div class="flex flex-col  gap-6">
-          <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-emerald-400 px-2 py-2">{{totalCurrentDue}} ৳</span></span>
+          <span class="block text-sm font-medium text-slate-700 ">বর্তমান বকেয়াঃ <span class="rounded-full bg-red-200 px-2 py-2 text-black">{{totalCurrentDue}} ৳</span></span>
 
           <label class="block">
             <span class="block text-sm font-medium text-slate-700">হালখাতায় জমার পরিমাণঃ</span>
@@ -81,9 +81,9 @@
 
 
       </div>
-      <h4 class="text-center mt-6" >সর্বশেষ বকেয়াঃ <span class="rounded-full bg-emerald-400 px-5 py-2">{{finalTotalDue}} ৳</span> </h4>
+      <h4 class="text-center mt-6" >সর্বশেষ বকেয়াঃ <span class="rounded-full bg-red-500 px-5 py-2 text-white">{{finalTotalDue}} ৳</span> </h4>
     </section>
-    <button class="text-center bg-emerald-400 p-3 rounded-2xl" @click="allReset" type="reset">রিসেট করুন</button>
+    <button class="text-center bg-yellow-400 p-3 rounded-2xl" @click="allReset" type="reset">রিসেট করুন</button>
 
   </main>
 </template>
