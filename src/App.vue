@@ -1,13 +1,13 @@
 
 
 <template>
-<HomePage/>
+<router-view></router-view>
 </template>
 
 
 <script setup>
 
-import HomePage from "@/components/pages/HomePage.vue";
+import Halkhata from "@/components/pages/Halkhata.vue";
 </script>
 
 
