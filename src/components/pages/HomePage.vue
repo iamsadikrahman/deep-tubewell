@@ -11,7 +11,9 @@
   <main>
     <section id="potato">
         <h3 class="title">আলুর সেচ হিসাব</h3>
+        <div>
 
+        </div>
     </section>
   </main>
 </template>
@@ -23,11 +25,10 @@
 <style scoped>
 
 .title{
-  font-size: 24px;
   text-align: center;
-  border: 2px solid gray;
   padding: 8px 2px;
   border-radius: 5px;
+  background-color: darkgrey;
 }
 
 .halkhata {
