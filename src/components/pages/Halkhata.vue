@@ -6,7 +6,7 @@
   </header>
 
 <!--    Potato Start-->
-    <section id="potato" class="border-2 rounded-2xl p-3">
+    <section id="potato" class="border-2 rounded-2xl p-2">
         <h3 class="text-center pb-3">আলু মৌসুমের হিসাব</h3>
         <div class="season-calculation flex justify-center gap-3">
 
@@ -32,7 +32,7 @@
 <!--Potato End-->
 
 <!--    Paddy Start-->
-    <section id="potato" class="border-2 rounded-2xl p-3">
+    <section id="potato" class="border-2 rounded-2xl p-2">
       <h3 class="text-center pb-3">ইরি মৌসুমের হিসাব</h3>
       <div class="season-calculation flex justify-center gap-3 ">
 
@@ -56,10 +56,10 @@
       </div>
     </section>
 <!--    Paddy End-->
-    <section class="final-calculation border-2 rounded-2xl p-3">
+    <section class="final-calculation border-2 rounded-2xl p-2">
         <h3 class="text-center pb-3">সর্বশেষ হিসাব</h3>
 
-      <div class="final-calculation-area flex gap-2.5">
+      <div class="final-calculation-area flex gap-2">
         <div class="flex flex-col gap-6">
           <span class="block text-sm font-medium text-slate-700">মোট সেচ খরচঃ <span class="rounded-full bg-emerald-400 px-2 py-2">{{totalCost}} টাকা</span></span>
 
