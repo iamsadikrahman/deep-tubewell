@@ -22,8 +22,8 @@
             </label>
           </div>
 
-          <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
-            <p class="potato-total-cost">সেচ খরচঃ</p>
+          <div class="bg-blue-400 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
+            <p class="potato-total-cost">মোট সেচ খরচঃ</p>
             <h4> {{ potatoTotalCost }} টাকা</h4>
           </div>
 
@@ -48,8 +48,8 @@
           </label>
         </div>
 
-        <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
-          <p class="potato-total-cost">সেচ খরচঃ</p>
+        <div class="bg-blue-400 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
+          <p class="potato-total-cost">মোট সেচ খরচঃ</p>
           <h4> {{ paddyTotalCost }} টাকা</h4>
         </div>
 
