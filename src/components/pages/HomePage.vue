@@ -28,8 +28,10 @@
       <h3 class="title">ইরির সেচ হিসাব</h3>
       <div class="season-calculation">
 
-        <label for="paddy-field">ইরির মোট জমির পরিমাণঃ</label>
-        <input type="text" name="paddy-field" v-model="paddyField">
+        <div>
+          <label for="paddy-field">ইরির মোট জমির পরিমাণঃ</label>
+          <input type="text" name="paddy-field" v-model="paddyField">
+        </div>
         <br>
         <label for="paddy-per-unit-cost">ইরির প্রতি শতকঃ</label>
         <input type="text" name="paddy-per-unit-cost" v-model="paddyPerUnitCost">
