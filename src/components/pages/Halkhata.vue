@@ -24,7 +24,7 @@
 
           <div class="bg-orange-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12 gap-3">
             <p class="text-center text-sm font-medium">আলু মৌসুমের <br> মোট সেচ খরচঃ</p>
-            <p class="text-center text-sm font-medium rounded-full bg-emerald-400 px-5 py-2"> {{ potatoTotalCost }} ৳</p>
+            <p class="text-center text-sm font-medium rounded-full bg-stone-300 px-5 py-2"> {{ potatoTotalCost }} ৳</p>
           </div>
 
         </div>
@@ -48,9 +48,9 @@
           </label>
         </div>
 
-        <div class="bg-sky-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12 gap-3">
+        <div class="bg-pink-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12 gap-3">
           <p class="text-center text-sm font-medium">ইরি মৌসুমের <br> মোট সেচ খরচঃ</p>
-          <p class="text-center text-sm font-medium rounded-full bg-emerald-400 px-5 py-2"> {{ paddyTotalCost }} ৳</p>
+          <p class="text-center text-sm font-medium rounded-full bg-sky-200 px-5 py-2"> {{ paddyTotalCost }} ৳</p>
         </div>
 
       </div>
