@@ -2,7 +2,7 @@
   <header>
     <h2 class="title">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
     <div class="halkhata">
-      <h3>শুভ হালখাতা</h3>
+      <h3>শুভ হালখাতা! শুভ হালখাতা! শুভ হালখাতা!</h3>
       <h4>সময়ঃ ১১ জুলাই ২০২৩ ইং । রোজঃ মঙ্গলবার</h4>
     </div>
 
@@ -39,6 +39,20 @@
 
       </div>
     </section>
+    <section class="final-calculation">
+        <h3 class="title">সর্বশেষ হিসাব</h3>
+
+      <div class="final-calculation-area">
+        <h4>মোট সেচ খরচঃ {{totalCost}} টাকা</h4>
+        <label for="advance-paid">অগ্রীম জমার পরিমাণঃ</label>
+        <input type="text" name="advance-paid" v-model="advancePaid">
+        <h4>বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</h4>
+        <label for="halkhata-paid">হালখাতায় জমার পরিমাণঃ</label>
+        <input type="text" name="halkhata-paid" v-model="halkhataPaid">
+        <h4>সর্বশেষ বকেয়াঃ {{finalDue}} টাকা</h4>
+      </div>
+    </section>
+
   </main>
 </template>
 
@@ -52,6 +66,12 @@ const potatoPerUnitCost = ref(25)
 const paddyPerUnitCost = ref(45)
 let totalPotatoCost;
 let totalPaddyCost;
+let totalIrrigationCost;
+
+const advancePaid = ref()
+let  currentDue;
+
+
 
 
 // Potato Calculation
@@ -81,9 +101,22 @@ const paddyTotalCost  = computed(()=>{
 
 })
 
+// Total Cost
+const totalCost = computed(() => {
+  totalIrrigationCost = potatoTotalCost.value + paddyTotalCost.value
+  return totalIrrigationCost;
+})
+
+
+// Final Calculation
+
+const totalCurrentDue = computed(()=> {
+  const totalAdvancePaid = parseInt(advancePaid.value)
+ currentDue = totalIrrigationCost - totalAdvancePaid
+  return currentDue
+})
+
 </script>
-
-
 
 <style scoped>
 
@@ -97,6 +130,7 @@ const paddyTotalCost  = computed(()=>{
 
 .halkhata {
   text-align: center;
+
 }
 
 
