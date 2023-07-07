@@ -1,14 +1,14 @@
 <template>
-  <main class="flex flex-col container mx-auto w-10/12 gap-5">
+  <main class="flex flex-col container mx-auto w-11/12 gap-5">
    <header>
     <h2 class="mt-5 text-center">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
 
   </header>
 
 <!--    Potato Start-->
-    <section id="potato" class="border-2 rounded-2xl pt-5 pb-5">
+    <section id="potato" class="border-2 rounded-2xl p-3">
         <h3 class="text-center pb-5">আলু মৌসুমের হিসাব</h3>
-        <div class="season-calculation flex justify-center gap-5 ">
+        <div class="season-calculation flex justify-center gap-3">
 
           <div>
             <label class="block mb-3">
@@ -23,7 +23,7 @@
           </div>
 
           <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
-            <h4 class="potato-total-cost">মোট সেচ খরচঃ</h4>
+            <p class="potato-total-cost">মোট সেচ খরচঃ</p>
             <h4> {{ potatoTotalCost }} টাকা</h4>
           </div>
 
@@ -32,9 +32,9 @@
 <!--Potato End-->
 
 <!--    Paddy Start-->
-    <section id="potato" class="border-2 rounded-2xl pt-5 pb-5">
+    <section id="potato" class="border-2 rounded-2xl p-3">
       <h3 class="text-center pb-5">ইরি মৌসুমের হিসাব</h3>
-      <div class="season-calculation flex justify-center gap-5 ">
+      <div class="season-calculation flex justify-center gap-3 ">
 
         <div>
           <label class="block mb-3">
@@ -49,7 +49,7 @@
         </div>
 
         <div class="bg-blue-400 flex flex-col justify-center pl-5 pr-5 rounded-2xl items-center">
-          <h4 class="potato-total-cost">মোট সেচ খরচঃ</h4>
+          <p class="potato-total-cost">মোট সেচ খরচঃ</p>
           <h4> {{ paddyTotalCost }} টাকা</h4>
         </div>
 
