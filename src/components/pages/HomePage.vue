@@ -29,6 +29,7 @@
   padding: 8px 2px;
   border-radius: 5px;
   background-color: darkgrey;
+  font-size: 22px;
 }
 
 .halkhata {
