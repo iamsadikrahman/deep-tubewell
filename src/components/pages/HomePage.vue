@@ -52,7 +52,7 @@
         <h4>বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</h4>
         <label for="halkhata-paid">হালখাতায় জমার পরিমাণঃ</label>
         <input type="text" name="halkhata-paid" v-model="halkhataPaid">
-        <h4>সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
+        <h4 id="final-due">সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
       </div>
     </section>
 
@@ -196,6 +196,10 @@ header {
   background-color: seagreen;
   cursor: pointer;
   color: white;
+}
+
+#final-due {
+  color: red;
 }
 
 
