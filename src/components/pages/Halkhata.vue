@@ -23,8 +23,8 @@
           </div>
 
           <div class="bg-orange-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
-            <p class="potato-total-cost text-center">আলু মৌসুমের <br> মোট সেচ খরচঃ</p>
-            <h4> {{ potatoTotalCost }} টাকা</h4>
+            <p class="text-center text-sm font-medium">আলু মৌসুমের <br> মোট সেচ খরচঃ</p>
+            <p class="text-center text-sm font-medium"> {{ potatoTotalCost }} টাকা</p>
           </div>
 
         </div>
@@ -49,8 +49,8 @@
         </div>
 
         <div class="bg-sky-200 flex flex-col justify-center pl-3 pr-3 rounded-2xl items-center w-5/12">
-          <p class="text-center">ইরি মৌসুমের <br> মোট সেচ খরচঃ</p>
-          <h4> {{ paddyTotalCost }} টাকা</h4>
+          <p class="text-center text-sm font-medium">ইরি মৌসুমের <br> মোট সেচ খরচঃ</p>
+          <p class="text-center text-sm font-medium"> {{ paddyTotalCost }} টাকা</p>
         </div>
 
       </div>
