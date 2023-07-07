@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col container mx-auto w-3/4 gap-10">
+  <main class="flex flex-col container mx-auto w-10/12 gap-10">
    <header>
     <h2 class="title">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
     <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button>
