@@ -1,15 +1,11 @@
 <template>
-  <header>
+  <main class="flex flex-col container mx-auto w-3/4 gap-10">
+   <header>
     <h2 class="title">তালোড়া বাইগুনী পশ্চিমপাড়া গভীর নলকূপ</h2>
-<!--    <div class="halkhata">-->
-<!--      <h3>শুভ হালখাতা! শুভ হালখাতা! শুভ হালখাতা!</h3>-->
-<!--      <h4>সময়ঃ ১১ জুলাই ২০২৩ ইং । রোজঃ মঙ্গলবার</h4>-->
-<!--    </div>-->
     <button class="reset-btn" @click="allReset" type="reset">রিসেট করুন</button>
-
   </header>
 
-  <main>
+
     <section id="potato">
         <h3 class="title">আলুর সেচ হিসাব</h3>
         <div class="season-calculation">
@@ -161,12 +157,6 @@ const allReset = ()=> {
   border-radius: 5px;
   background-color: lightgray;
   font-size: 18px;
-}
-
-.halkhata {
-  text-align: center;
-  font-size: 14px;
-
 }
 
 input {
