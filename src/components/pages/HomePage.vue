@@ -144,13 +144,27 @@ const finalTotalDue = computed(()=>{
   text-align: center;
   padding: 8px 2px;
   border-radius: 5px;
-  background-color: darkgrey;
-  font-size: 20px;
+  background-color: lightgray;
+  font-size: 18px;
 }
 
 .halkhata {
   text-align: center;
+  font-size: 14px;
 
+}
+
+input {
+  border: 1px solid lightgray;
+  padding: 8px 5px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+
+}
+
+h4 {
+  text-align: center;
 }
 
 
