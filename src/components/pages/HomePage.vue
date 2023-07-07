@@ -49,7 +49,7 @@
         <h4>বর্তমান বকেয়াঃ {{totalCurrentDue}} টাকা</h4>
         <label for="halkhata-paid">হালখাতায় জমার পরিমাণঃ</label>
         <input type="text" name="halkhata-paid" v-model="halkhataPaid">
-        <h4>সর্বশেষ বকেয়াঃ {{finalDue}} টাকা</h4>
+        <h4>সর্বশেষ বকেয়াঃ {{finalTotalDue}} টাকা</h4>
       </div>
     </section>
 
@@ -58,7 +58,7 @@
 
 <script setup>
 
-import {ref, computed, watch} from "vue";
+import {ref, computed} from "vue";
 
 const potatoField = ref('')
 const paddyField = ref('')
@@ -70,6 +70,9 @@ let totalIrrigationCost;
 
 const advancePaid = ref()
 let  currentDue;
+const halkhataPaid = ref('')
+let finalDue;
+
 
 
 
@@ -112,8 +115,25 @@ const totalCost = computed(() => {
 
 const totalCurrentDue = computed(()=> {
   const totalAdvancePaid = parseInt(advancePaid.value)
+  if(isNaN(totalAdvancePaid)){
+    currentDue = 0
+    return  currentDue
+  }
  currentDue = totalIrrigationCost - totalAdvancePaid
   return currentDue
+})
+
+const finalTotalDue = computed(()=>{
+  const halkhataDayPaid = parseInt(halkhataPaid.value)
+
+  if(isNaN(halkhataDayPaid)) {
+    finalDue = 0
+    return finalDue
+  }
+  finalDue = currentDue - halkhataDayPaid
+  return finalDue
+
+
 })
 
 </script>
