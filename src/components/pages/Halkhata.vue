@@ -94,7 +94,7 @@ import {ref, computed} from "vue";
 
 const potatoField = ref('')
 const paddyField = ref('')
-const potatoPerUnitCost = ref(25)
+const potatoPerUnitCost = ref(30)
 const paddyPerUnitCost = ref(45)
 let totalPotatoCost;
 let totalPaddyCost;
